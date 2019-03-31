@@ -36,7 +36,7 @@ public class WelcomeControllerTest {
   public void welcome() throws Exception {
     mockMvc.perform(get("/"))
         .andExpect(status().isOk())
-        .andExpect(model().attribute("learn", containsString("devops")));
+        .andExpect(model().attribute("companyName", containsString("DirecTV")));
   }
 
 }
